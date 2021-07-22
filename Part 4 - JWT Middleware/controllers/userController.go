@@ -164,6 +164,7 @@ func DeleteOneUserControllers(c echo.Context) error {
 }
 
 func UpdateOneUserControllers(c echo.Context) error {
+	var user models.User
 	id, err := strconv.Atoi(c.Param("id"))
 	if err != nil {
 		return c.JSON(http.StatusBadRequest, map[string]interface{}{
@@ -174,8 +175,9 @@ func UpdateOneUserControllers(c echo.Context) error {
 	if loggedInUserId != id {
 		return echo.NewHTTPError(http.StatusUnauthorized, "Unauthorized access, can not access the other databases")
 	}
-	var user models.User
-	c.Bind(user)
+	get_user, _ := database.GetDetailUsers(id)
+	user = get_user
+	c.Bind(&user)
 	update_user, err := database.UpdateOneUser(user)
 	if err != nil {
 		return c.JSON(http.StatusInternalServerError, map[string]interface{}{
