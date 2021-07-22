@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "0a2aa208-a8bc-4012-9214-94f3db87d330",
+		"name": "Task 1A",
+		"description": "# Introduction\nWhat does your API do?\n\n# Overview\nThings that the developers should know about\n\n# Authentication\nWhat is the preferred way of using the API?\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests an user can send?",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API ke 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=apple&from=2021-07-14&to=2021-07-14&sortBy=popularity&apiKey=b38a59a2ff6140a884d8761e308957bf",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "apple"
+						},
+						{
+							"key": "from",
+							"value": "2021-07-14"
+						},
+						{
+							"key": "to",
+							"value": "2021-07-14"
+						},
+						{
+							"key": "sortBy",
+							"value": "popularity"
+						},
+						{
+							"key": "apiKey",
+							"value": "b38a59a2ff6140a884d8761e308957bf"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API ke 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=tesla&from=2021-06-15&sortBy=publishedAt&apiKey=b38a59a2ff6140a884d8761e308957bf",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "tesla"
+						},
+						{
+							"key": "from",
+							"value": "2021-06-15"
+						},
+						{
+							"key": "sortBy",
+							"value": "publishedAt"
+						},
+						{
+							"key": "apiKey",
+							"value": "b38a59a2ff6140a884d8761e308957bf"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API ke 3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=b38a59a2ff6140a884d8761e308957bf",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "us"
+						},
+						{
+							"key": "category",
+							"value": "business"
+						},
+						{
+							"key": "apiKey",
+							"value": "b38a59a2ff6140a884d8761e308957bf"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API ke 4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=b38a59a2ff6140a884d8761e308957bf",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "sources",
+							"value": "techcrunch"
+						},
+						{
+							"key": "apiKey",
+							"value": "b38a59a2ff6140a884d8761e308957bf"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API ke 5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?domains=wsj.com&apiKey=b38a59a2ff6140a884d8761e308957bf",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "domains",
+							"value": "wsj.com"
+						},
+						{
+							"key": "apiKey",
+							"value": "b38a59a2ff6140a884d8761e308957bf"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
